@@ -1,0 +1,425 @@
+:root {
+  /* Cores */
+  --fundo: #2b1055;
+  --lupa: #676767;
+  --links-menu: #fde6e6;
+  --menu-mobile: #e5baba;
+
+  /* Fontes */
+  --primaria: "Noto Sans", sans-serif;
+  --secundaria: "Nunito", sans-serif;
+}
+
+body {
+  background-color: var(--fundo) !important;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.menu-btn {
+  cursor: pointer;
+  display: none;
+  padding: 5px;
+  transition: transform 0.3s;
+  user-select: none;
+}
+
+@media (max-width: 950px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .menu-items {
+    background-color: var(--menu-mobile);
+    display: none !important;
+    margin: 0;
+    padding: 0;
+    top: 80%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
+  .menu-items.ativo {
+    animation: show-down 0.5s forwards;
+    display: block !important;
+  }
+
+  .form-busca {
+    display: none;
+  }
+}
+
+.menu-btn.ativo {
+  transform: rotate(90deg);
+}
+
+.menu-logo {
+  width: 40px;
+}
+
+.menu-items {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  margin-left: 20%;
+}
+
+.item-link {
+  color: var(--links-menu);
+  font-family: var(--primaria);
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+}
+
+.item-link::after {
+  background-color: var(--links-menu);
+  height: 2px;
+  width: 0%;
+  transition: width 1s;
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+}
+
+.item-link:hover {
+  color: var(--links-menu);
+  text-decoration: none;
+}
+
+.item-link:hover::after {
+  width: 100%;
+}
+
+.barra {
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  padding-left: 40px;
+}
+
+.form-busca {
+  width: 20%;
+  position: relative;
+}
+
+.barra-lupa {
+  color: var(--lupa);
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.game-image {
+  height: 90vh;
+}
+
+@media (max-width: 950px) {
+  .game-image {
+    height: 80vh;
+  }
+}
+@media (max-width: 750px) {
+  .game-image {
+    height: 70vh;
+  }
+}
+@media (max-width: 650px) {
+  .game-image {
+    height: 60vh;
+  }
+}
+@media (max-width: 550px) {
+  .game-image {
+    height: 45vh;
+  }
+}
+@media (max-width: 400px) {
+  .game-image {
+    height: 30vh;
+  }
+}
+
+@keyframes show-down {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+body {
+  background: linear-gradient(180deg, var(--fundo), #7597de);
+}
+
+.cards-noticias {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card-body {
+  display: flex;
+  flex-wrap: wrap !important;
+  font-family: var(--primaria);
+}
+
+.text-bot {
+  align-self: flex-end;
+}
+
+.noticias-titulo {
+  font-family: var(--secundaria);
+  color: cornsilk;
+  padding: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.faixa {
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 -50px;
+  gap: 30px;
+  padding: 5px;
+}
+
+.faixa-titulo {
+  font-size: 50px;
+  position: absolute;
+  color: var(--links-menu);
+  font-family: var(--primaria);
+  font-weight: bold;
+  text-transform: capitalize;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-title {
+  font-size: 30px;
+  width: 100%;
+}
+
+footer {
+  display: flex !important;
+  background-color: #7597de;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  align-items: flex-start;
+  font-size: 14px;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 30px 60px;
+  margin-top: 50px;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+footer i {
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__main {
+  width: 30%;
+}
+
+.footer__icons i {
+  font-size: 22px;
+}
+
+.footer__icons i:hover {
+  color: #7597de;
+}
+
+.footer__icons {
+  margin-top: 10px;
+}
+
+.footer__logo img {
+  max-width: 50px;
+  margin-left: 20px;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+}
+
+.footer__main,
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+footer ul h4 {
+  margin-top: 20px;
+}
+
+/* Noticia Exemplo */
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.article__wrapper {
+  display: flex;
+  color: white;
+  margin-top: 30px;
+  font-family: "Nunito", sans-serif;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 30px 80px;
+}
+
+.article__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 80px;
+  color: white;
+  margin-top: 100px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.post-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.post-text p {
+  margin: 0;
+}
+
+.autor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.article__title {
+  font-size: 30px;
+}
+
+.article__date {
+  font-style: italic;
+}
+
+.article__img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.article__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article__text {
+  line-height: 1.7;
+}
+
+.autor {
+  margin-top: auto;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-right: 80px;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.all-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.artic-Link {
+  width: 80%;
+}
+
+.artic__img {
+  border-radius: 8px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #2b1055;
+}
+
+.info-autor {
+  display: flex;
+  flex-direction: column;
+}
+
+iframe {
+  border: 1px solid red;
+  margin: 10px 0;
+  width: 600px;
+  border-radius: 10px;
+}

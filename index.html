@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c6d6aa1dd7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>Site Jogo</title>
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <a href="index.html"><img src="./img/google-play-games-logo.png" alt="logo" class="menu-logo">
+        <ul class="menu-items">
+          <li class="item"><a href="noticia.html" class="item-link">Notícias</a></li>
+          <li class="item"><a href="" class="item-link">Rewiews</a></li>
+          <li class="item"><a href="E-sports.html" class="item-link">E-sports</a></li>
+          <li class="item"><a href="" class="item-link">Games</a></li>
+        </ul>
+        <form class="form-busca">
+          <input class="barra" type="search" placeholder="Buscar" aria-label="Buscar">
+          <span class="material-symbols-outlined barra-lupa">
+            search
+          </span>
+        </form>
+        <span class="material-symbols-outlined menu-btn">
+          menu
+        </span>
+    </nav>
+  </header>
+
+  <!-- Carousel -->
+  <div id="carouselGame" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselGame" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselGame" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselGame" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/2019-12-26t043143z-1511926780-rc2s2e9do6u3-rtrmadp-3-solar-eclipse-emirates.webp" class="d-block w-100 game-image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Eclipse anular (Anel de fogo)</h5>
+          <p>Fenômeno será no dia 14 de outubro e poderá ser visto em todo o estado, porém, há locais onde a obscuridade do sol será maior. Eclipse solar anular vai acontecer em 14 de outubro de 2023.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/fc24-screenshot-ucl-4k-haalandacrob.webp" class="d-block w-100 game-image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>EA Sports FC 24</h5>
+          <p>EA Sports FC 24 aproveita a base dos jogos anteriores na nova geração e faz ajustes pontuais para deixar as partidas mais dinâmicas com novos controles de dribles e a introdução dos PlayStyles. Os PlayStyles são habilidades especiais garantidas para os melhores jogadores e jogadoras do jogo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/captura-de-tela-2020-06-12-as-14.49.44.webp" class="d-block w-100 game-image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Playstation 5</h5>
+          <p>O PlayStation 5 tem recursos avançados, como feedback tátil, áudio 3D, compartilhamento de tela e captura de jogabilidade. Dedique um tempo para explorar esses recursos visando obter a melhor experiência possível no console.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGame" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselGame" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="card-deck">
+    <div class="card noticias">
+      <img class="card-img-top faixa" src="img/Star-Patterns-3.jpg" alt="imagem noticia">
+      <p class="faixa-titulo">Notícias Recentes</p>
+    </div>
+
+    <!--Cards-->
+
+    <div class="cards-noticias">
+      <div class="card-deck">
+        <div class="card noticias">
+          <img class="card-img-top" src="img/iphone15-pro-max-03.webp" alt="imagem noticia">
+          <div class="card-body">
+            <h5 class="card-title">Novo iPhone 15</h5>
+            <p class="card-text">Nova linha de celulares da Apple acaba de ser lançado nessa terça-feira (12 de Setembro).</p>
+            <p class="card-text text-bot"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card noticias">
+          <img class="card-img-top" src="img/iOS-17.webp" alt="imagem noticia">
+          <div class="card-body">
+            <h5 class="card-title">iOS 17</h5>
+            <p class="card-text">O iOS 17 apresenta grandes atualizações nos apps Telefone, Mensagens e FaceTime que oferecem novas formas de você se expressar ao se comunicar. O AirDrop facilita o compartilhamento e a conexão com pessoas por perto e agora tem o NameDrop para o compartilhamento de informações de contato. O iOS 17 também inclui atualizações no modo espera, nos Widgets, Safari, app Música e AirPlay, entre outras.</p>
+            <p class="card-text text-bot"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card noticias">
+          <img class="card-img-top" src="img/Starfield_1.jpg" alt="imagem noticia">
+          <div class="card-body">
+            <h5 class="card-title">Starfield</h5>
+            <p class="card-text">Starfield é o novo RPG de ação e aventura da Bethesda, responsável pelas séries Fallout e The Elder Scrolls. O game é ambientado no espaço e coloca seus jogadores para explorarem diversos planetas diferentes, além de investigarem um grande mistério do universo.</p>
+            <p class="card-text text-bot"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer__main">
+          <a href="index.html" class="footer__logo"><img src="./img/google-play-games-logo.png"></a>
+          <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo mi, fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo mi, fringilla.</p>
+          <div class="footer__icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            <h4>Contato</h4>
+          </li>
+          <li><i class="fa-solid fa-phone"></i>+11 95630-5666</li>
+          <li><i class="fa-solid fa-envelope"></i>lucasrq2006@gmail.com</li>
+        </ul>
+        <ul>
+          <li>
+            <h4><i class="fa-solid fa-location-dot"></i>Endereço</h4>
+          </li>
+          <li>Bairro do Limoeiro</li>
+          <li>Rua Itália</li>
+          <li>São Paulo, SP</li>
+        </ul>
+        <p class="copyright">Desenvolvido por Lucas Rodrigues de Queiroz</p>
+      </footer>
+
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
